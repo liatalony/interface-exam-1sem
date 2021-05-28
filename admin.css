@@ -202,14 +202,52 @@ main {
 }
 
 .card-single {
-    display: flex;
-    justify-content: space-between;
+    position: relative;
     background: var(--white);
-    padding: 2rem 3rem;
     border-radius: 15px;
+
 }
 
 .card-single p {
     margin: 2rem 1rem;
 }
 
+.cards-double-column .card-single{
+height: 100px;
+}
+
+main input, main textarea, main h2{
+    width: 100%;
+    padding: 2rem 3rem;
+    border-radius: 15px;
+    border: none;
+}
+
+
+.input{
+    position: relative;
+    display: block;
+}
+
+.input> h2, .input>input{
+    position: absolute;
+    background: var(--white);
+    border-radius: 15px;
+}
+
+.input input{
+    z-index: 1;
+    opacity: 0;
+}
+
+.article button{
+    display: block;
+    margin: 1rem 2rem;
+    margin-left: auto;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--main-color);
+    font-weight: bold;
+    color:var(--white);
+}
