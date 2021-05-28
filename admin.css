@@ -266,6 +266,10 @@ main input, main textarea, main h2{
     font-weight: bold;
     color:var(--white);
 }
+
+.article button.save{
+    background-color: var(--secondary-color);
+}
 main>article {
     position: absolute;
     opacity: 0;
@@ -278,6 +282,7 @@ main>article {
 
 main>article:target {
     opacity: 1;
+    z-index: 1;
 }
 
 
