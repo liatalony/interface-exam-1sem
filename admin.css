@@ -213,3 +213,35 @@ main {
     margin: 2rem 1rem;
 }
 
+main>div {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition:opacity 200ms linear;
+    -moz-transition:opacity 200ms linear;
+    -ms-transition:opacity 200ms linear;
+    transition:opacity 200ms linear;
+}
+/*opacity*/
+main>div:target {
+    opacity: 1;
+}
+
+/* The article title on the top of the page*/
+
+/* main h1 {
+	margin:1em 30px;
+	color: var(--main-color);
+	font-size: 20px;
+}
+
+.mainContent h1:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	margin-right: 10px;
+	-webkit-font-smoothing: antialiased;
+}  */
+
