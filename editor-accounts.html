@@ -26,34 +26,32 @@
         </div>
         <div class="sidebar-menu">
             <ul>
-            
                 <li>
-                    <a href="#newarticle" ><span class="las la-plus"></span>
-                        <span>New Article</span></a>
+                    <h2>Accounts</h2>
                 </li>
                 <li>
-                    <a href="#article1" class="active"><span class="las la-bell"></span>
-                        <span>Article1</span></a>
+                    <a href="#newarticle" ><span class="las la-plus"></span>
+                        <span>New Account</span></a>
+                </li>
+                <li>
+                    <a href="#article1" class="active"><span class="las la-edit"></span>
+                        <span>Michael Madsen</span></a>
                 </li>
                 <li>
                     <a href="#article2"><span class="las la-edit"></span>
-                        <span>Article2</span></a>
+                        <span>Katharine Vilstrup</span></a>
                 </li>
                 <li>
                     <a href="#article3"><span class="las la-edit"></span>
-                        <span>Article3</span></a>
-                </li>
-                <li>
-                    <a href="#article4"><span class="las la-edit"></span>
-                        <span>Article4</span></a>
+                        <span>Ditte Andersen</span></a>
                 </li>
                 <li>
                     <a href="#article5"><span class="las la-edit"></span>
-                        <span>Article5</span></a>
+                        <span>Annika Wolf</span></a>
                 </li>
                 <li>
                     <a href="#article6"><span class="las la-edit"></span>
-                        <span>Article6</span></a>
+                        <span>Mikkel Nielsen</span></a>
                 </li>
                 <li>
                     <a href="#article7"><span class="las la-edit"></span>
@@ -69,8 +67,8 @@
                 <label for="nav-toggle">
                     <span class="las la-bars"></span>
                 </label>
-                <a href="index.html"> Articles</a>
-                <a href="editor.html"> Accounts</a>
+                <a href="editor-articles.html"> Articles</a>
+                <a href="editor-accounts.html"> Accounts</a>
             </h2>
 
             <div class="search-wrapper">
@@ -96,38 +94,31 @@
         <main>
             <article class="article" id="newarticle">
                 <button>Save</button>
-            <div class="cards">
-                <div class="card-single">
-                    <div>
-                        <input type="text" placeholder="This is the title of an article">
+                <div class="cards">
+                    <div class="card-single">
+                        <div>
+                            <input type="text" placeholder="First name">
+                        </div>
                     </div>
-                </div>
-                <div class="card-single">
-                    <div>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="This is the content of an article"></textarea>
+                    <div class="card-single">
+                        <div>
+                            <input type="text" placeholder="Last name">
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="cards-double-column">
-                <div class="card-single">
-                    <div class="input">
-                        <input type="file" placeholder="Image">
-                        <h2>Image<span class="las la-upload"></span></h2>  
+                    <div class="card-single">
+                        <div>
+                            <input type="tel" placeholder="+45 11 22 33 44">
+                        </div>
                     </div>
+                    <select class="card-single" id="roles" name="roles">
+                            <option value="choose">Choose a role</option>
+                            <option value="writer">Writer</option>
+                            <option value="reader">Reader</option>
+                            <option value="chief-editor">Chief Editor</option>
+                            <option value="external">External</option>
+                    </select>
+        
                 </div>
-                <div class="card-single">
-                    <div class="input"> 
-                        <input type="file" placeholder="Video">
-                        <h2>Video<span class="las la-upload"></span></h2>  
-                    </div>
-                </div>
-                <div class="card-single">
-                    <div class="input">
-                        <input type="file" placeholder="mp3" name="mp3">
-                        <h2>mp3<span class="las la-upload"></span></h2>  
-                    </div>
-                </div>
-            </div>
             </article>
             <article class="article" id="article1">
                 <button>Save</button>
