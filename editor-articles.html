@@ -8,9 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="admin.css">
-    <link rel="stylesheet" href="/css/app.css">
-    <link rel="stylesheet" href="/css/navigation.css">
-    <link rel="stylesheet" href="/css/styles.css">
  
     <title>Próximo Writer</title>
 </head>
@@ -50,16 +47,16 @@
                     <h2>Articles</h2>
                 </li>
                 <li>
+                    <a href="#article4"><span class="las la-edit"></span>
+                        <span>Article4</span></a>
+                </li>
+                <li>
                     <a href="#article5"><span class="las la-edit"></span>
                         <span>Article5</span></a>
                 </li>
                 <li>
                     <a href="#article6"><span class="las la-edit"></span>
                         <span>Article6</span></a>
-                </li>
-                <li>
-                    <a href="#article7"><span class="las la-edit"></span>
-                        <span>Article7</span></a>
                 </li>
             </ul>
         </div>
@@ -97,6 +94,7 @@
 
         <main>
             <article class="article" id="newarticle">
+                <button>Publish</button>
             <div class="cards">
                 <div class="card-single">
                     <div>
@@ -128,6 +126,10 @@
                         <h2>mp3<span class="las la-upload"></span></h2>  
                     </div>
                 </div>
+            </div>
+            <div class="button-box-bottom">
+                <button id="delete">Return</button>
+                <button class="save">Save</button>
             </div>
             </article>
             <article class="article" id="article1">
@@ -164,11 +166,13 @@
                     </div>
                 </div>
             </div>
-            <button class="save">Return</button>
-            <button class="save">Save</button>
+            <div class="button-box-bottom">
+                <button id="delete">Return</button>
+                <button class="save">Save</button>
+            </div>
             </article>
             <article class="article" id="article2">
-                <button>Save</button>
+                <button>Publish</button>
             <div class="cards">
                 <div class="card-single">
                     <div>
@@ -201,9 +205,13 @@
                     </div>
                 </div>
             </div>
+            <div class="button-box-bottom">
+                <button id="delete">Return</button>
+                <button class="save">Save</button>
+            </div>
             </article>
             <article class="article" id="article3">
-                <button>Submit</button>
+                <button>Publish</button>
             <div class="cards">
                 <div class="card-single">
                     <div>
@@ -253,14 +261,76 @@ Donec interdum, quam eu volutpat rhoncus, risus nisl maximus ipsum, id aliquam l
                     </div>
                 </div>
             </div>
-            <button class="save">Save</button>
+            <div class="button-box-bottom">
+                <button id="delete">Return</button>
+                <button class="save">Save</button>
+            </div>
+            </article>
+            <article class="article" id="article4">
+                <div class="button-box">
+                    <button>Unpublish</button>
+                    <button id="disabled">Publish</button>
+                </div>
+                
+            <div class="cards">
+                <div class="card-single">
+                    <div>
+                        <input type="text" placeholder="This is the title of an article" value="Article 4">
+                    </div>
+                </div>
+                <div class="card-single">
+                    <div>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="This is the content of an article">Lorem ipsum dolor sit amet, 
+consectetur adipiscing elit. Nunc scelerisque pharetra est, at scelerisque urna interdum ut. 
+Integer id purus sit amet turpis ornare rhoncus. Fusce purus ligula, congue volutpat ultricies vitae, 
+pellentesque nec ex. Nulla eget libero in enim condimentum consequat vulputate sit amet arcu. 
+Maecenas id iaculis magna. Quisque aliquet accumsan molestie. 
+Nunc et libero eget enim consectetur commodo in et metus. 
+Nullam ultrices metus ut lectus consequat, vel semper felis luctus. 
+Nulla pretium rutrum erat, non ultrices sem ultricies nec. 
+Donec interdum, quam eu volutpat rhoncus, risus nisl maximus ipsum, id aliquam leo risus at neque. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Nunc scelerisque pharetra est, at scelerisque urna interdum ut. 
+Integer id purus sit amet turpis ornare rhoncus. 
+Fusce purus ligula, congue volutpat ultricies vitae, pellentesque nec ex. 
+Nulla eget libero in enim condimentum consequat vulputate sit amet arcu. 
+Maecenas id iaculis magna. Quisque aliquet accumsan molestie. 
+Nunc et libero eget enim consectetur commodo in et metus. Nullam ultrices metus ut lectus consequat, vel semper felis luctus. 
+Nulla pretium rutrum erat, non ultrices sem ultricies nec. 
+Donec interdum, quam eu volutpat rhoncus, risus nisl maximus ipsum, id aliquam leo risus at neque.</textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="cards-double-column">
+                <div class="card-single">
+                    <div class="input">
+                        <input type="file" placeholder="Image">
+                        <h2>Image<span class="las la-upload"></span></h2>  
+                    </div>
+                </div>
+                <div class="card-single">
+                    <div class="input"> 
+                        <input type="file" placeholder="Video">
+                        <h2>Video<span class="las la-upload"></span></h2>  
+                    </div>
+                </div>
+                <div class="card-single">
+                    <div class="input">
+                        <input type="file" placeholder="mp3" name="mp3">
+                        <h2>mp3<span class="las la-upload"></span></h2>  
+                    </div>
+                </div>
+            </div>
+            <div class="button-box-bottom">
+                <button id="delete">Delete</button>
+                <button class="save">Save</button>
+            </div>
             </article>
             <article class="article" id="article5">
                 <div class="button-box">
                     <button>Unpublish</button>
                     <button id="disabled">Publish</button>
                 </div>
-                
             <div class="cards">
                 <div class="card-single">
                     <div>
@@ -310,7 +380,10 @@ Donec interdum, quam eu volutpat rhoncus, risus nisl maximus ipsum, id aliquam l
                     </div>
                 </div>
             </div>
-            <button class="save">Save</button>
+            <div class="button-box-bottom">
+                <button id="delete">Delete</button>
+                <button class="save">Save</button>
+            </div>
             </article>
             <article class="article" id="article6">
                 <div class="button-box">
@@ -366,74 +439,13 @@ Donec interdum, quam eu volutpat rhoncus, risus nisl maximus ipsum, id aliquam l
                     </div>
                 </div>
             </div>
-            <button class="save">Save</button>
-            </article>
-            <article class="article" id="article7">
-                <div class="button-box">
-                    <button>Unpublish</button>
-                    <button id="disabled">Publish</button>
-                </div>
-            <div class="cards">
-                <div class="card-single">
-                    <div>
-                        <input type="text" placeholder="This is the title of an article" value="Article 7">
-                    </div>
-                </div>
-                <div class="card-single">
-                    <div>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="This is the content of an article">Lorem ipsum dolor sit amet, 
-consectetur adipiscing elit. Nunc scelerisque pharetra est, at scelerisque urna interdum ut. 
-Integer id purus sit amet turpis ornare rhoncus. Fusce purus ligula, congue volutpat ultricies vitae, 
-pellentesque nec ex. Nulla eget libero in enim condimentum consequat vulputate sit amet arcu. 
-Maecenas id iaculis magna. Quisque aliquet accumsan molestie. 
-Nunc et libero eget enim consectetur commodo in et metus. 
-Nullam ultrices metus ut lectus consequat, vel semper felis luctus. 
-Nulla pretium rutrum erat, non ultrices sem ultricies nec. 
-Donec interdum, quam eu volutpat rhoncus, risus nisl maximus ipsum, id aliquam leo risus at neque. 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-Nunc scelerisque pharetra est, at scelerisque urna interdum ut. 
-Integer id purus sit amet turpis ornare rhoncus. 
-Fusce purus ligula, congue volutpat ultricies vitae, pellentesque nec ex. 
-Nulla eget libero in enim condimentum consequat vulputate sit amet arcu. 
-Maecenas id iaculis magna. Quisque aliquet accumsan molestie. 
-Nunc et libero eget enim consectetur commodo in et metus. Nullam ultrices metus ut lectus consequat, vel semper felis luctus. 
-Nulla pretium rutrum erat, non ultrices sem ultricies nec. 
-Donec interdum, quam eu volutpat rhoncus, risus nisl maximus ipsum, id aliquam leo risus at neque.</textarea>
-                    </div>
-                </div>
-            </div>
-            <div class="cards-double-column">
-                <div class="card-single">
-                    <div class="input">
-                        <input type="file" placeholder="Image">
-                        <h2>Image<span class="las la-upload"></span></h2>  
-                    </div>
-                </div>
-                <div class="card-single">
-                    <div class="input"> 
-                        <input type="file" placeholder="Video">
-                        <h2>Video<span class="las la-upload"></span></h2>  
-                    </div>
-                </div>
-                <div class="card-single">
-                    <div class="input">
-                        <input type="file" placeholder="mp3" name="mp3">
-                        <h2>mp3<span class="las la-upload"></span></h2>  
-                    </div>
-                </div>
-            </div>
-            <div class="button-box">
-                <h3><span class="las la-trash-alt"></span></h3>
+            <div class="button-box-bottom">
+                <button id="delete">Delete</button>
                 <button class="save">Save</button>
             </div>
             
             </article>
         </main>
 
-      <footer class="mainfooter">
-        ©   
-        </footer>
-     
-    
 </body>
 </html>
