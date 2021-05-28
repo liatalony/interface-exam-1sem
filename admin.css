@@ -271,6 +271,7 @@ main>article {
 
 main>article:target {
     opacity: 1;
+    z-index: 1;
 }
 
 
