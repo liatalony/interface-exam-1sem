@@ -35,6 +35,10 @@
     color: var(--white);
 }
 
+.sidebar-brand a {
+    color: var(--white);
+}
+
 .sidebar-brand span {
     display: inline-block;
     padding-right: 1rem;
@@ -229,7 +233,7 @@ main {
 height: 100px;
 }
 
-main input, main textarea, main h2{
+main input, main select, main textarea, main h2{
     width: 100%;
     padding: 2rem 3rem;
     border-radius: 15px;
@@ -265,11 +269,28 @@ main input, main textarea, main h2{
     background-color: var(--main-color);
     font-weight: bold;
     color:var(--white);
+    cursor: pointer;
 }
 
 .article button.save{
     background-color: var(--secondary-color);
 }
+
+.button-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.button-box button {
+    margin: 1rem;
+}
+
+#disabled{
+    background-color: #c7c7c7;
+    color: rgb(141, 141, 141);
+}
+
 main>article {
     position: absolute;
     opacity: 0;
@@ -286,22 +307,4 @@ main>article:target {
 }
 
 
-/* The article title on the top of the page*/
-
-/* main h1 {
-	margin:1em 30px;
-	color: var(--main-color);
-	font-size: 20px;
-}
-
-.mainContent h1:before {
-	font-family: 'icomoon';
-	content: attr(data-icon);
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	margin-right: 10px;
-	-webkit-font-smoothing: antialiased;
-}  */
 
