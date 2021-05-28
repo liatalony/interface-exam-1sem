@@ -19,7 +19,7 @@
 }
 
 body {
-    background: linear-gradient(180deg, #DD2F6E, #3E0331);
+    background: var(--light-gray);
     height: 100vh;
     overflow: hidden;
 }
@@ -36,16 +36,17 @@ body {
 
 .center h1 {
     text-align: center;
-    padding: 0 0 20px 0;
+    padding: 1rem 0;
+    color: var(--color-dark);
     border-bottom: 1px solid var(--light-gray);
 }
 
-.center form {
+.form {
    padding: 0 40px;
    box-sizing: border-box; 
 }
 
-form .text-field {
+.text-field {
     position: relative;
     border-bottom: 1px solid silver;
     margin: 30px 0;
@@ -116,11 +117,28 @@ input[type="submit"] {
     font-weight: 400;
     cursor: pointer;
     outline: none;
+    margin-bottom: 1rem;
 }
 
 input[type="submit"]:hover {
     border-color: var(--main-color);
     transition: .5s;
+}
+
+.admin-link {
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 16px;
+    color: var(--color-dark);
+}
+
+.admin-link a {
+    color: var(--main-color);
+    font-weight: 500;
+}
+
+.admin-link a:hover {
+    text-decoration: underline;
 }
 
 
