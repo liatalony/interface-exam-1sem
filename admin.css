@@ -325,5 +325,41 @@ main>article:target {
     z-index: 1;
 }
 
+/*------------ Responsive syling ---------*/
+@media only screen and (max-width: 1200px) {
+    .sidebar {
+        width: 70px; 
+      }
+    
+    .main-content article {
+        width:calc(100% - 70px);
+    }
+    
+    .sidebar .sidebar-brand,  
+    .sidebar li{
+        padding-left: 1rem;
+        text-align: center; 
+      }
+    
+    .sidebar li a{
+        padding-left: 0rem; 
+      }
+    
+    .sidebar .sidebar-brand h2 span:last-child, 
+    .sidebar li a span:last-child,
+    .sidebar li h2:last-child{
+        display: none; 
+      }
+    
+    .main-content {
+        margin-left: 70px; 
+      }
+      
+    .main-content header {
+        width: calc(100% - 70px); 
+        left: 70px;
+      }  
+}
+
 
 
